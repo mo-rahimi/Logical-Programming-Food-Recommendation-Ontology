@@ -13,4 +13,4 @@ The key terms of food ontology considered in this work are Dish, Ingredients, Me
 B. Type of Queries
 
 1. hj
-2. hbj
+

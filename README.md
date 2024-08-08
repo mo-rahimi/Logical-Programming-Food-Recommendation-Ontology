@@ -7,13 +7,19 @@
 - [Installation and Usage](#installation-and-usage)
 - [Features](#features)
 - [Key Classes](#classes)
-- Relationships
-- Property Restrictions
-- Applications
-
-
+- Applying Disjoint
+- Relationship between different classes
+- Assigning domain and range to object properties
+- Data properties and relation
+- Property Restriction
+- Applying Closure Axiom
+- Change a Primitive class to a Defined class
+- Using the reasoner
+- [Relationships](#relationships)
+- [Property Restrictions](#property-restrictions)
+- [Applications](#applications)
 - [Examples](#examples)
--  Conclusion
+- [Conclusion](#conclusion)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -21,7 +27,7 @@
 
 ## Overview
 This repository contains a comprehensive food ontology written in OWL (Web Ontology Language). It aims to provide a standardized vocabulary and semantic structure for describing food products, ingredients, personalized nutritional recommendations to support healthy eating through a comprehensive food ontology and related concepts.
-
+![Alt text](images/ontology_diagram.png)
 ## Technical Details
 - Written in OWL (Web Ontology Language)
 - Developed using Protégé [version]
@@ -56,11 +62,11 @@ The ontology can be applied in various domains, including restaurants, the food 
 ## Examples
 Expected queries to be answered, such as:
 - Recommend the user dishes based on the ingredients
-• Recommend the user dishes based on the nutrition.
-• Recommend the user dishes based on amount of calorie.
-• Recommend the user dishes based on different categories such as, high protein dishes, vegan dishes, complex dishes, and different meals.
-• Recommend the user dishes based on their allergy.
-• Recommend the user dishes based on their disease.
+- Recommend the user dishes based on the nutrition.
+- Recommend the user dishes based on amount of calorie.
+- Recommend the user dishes based on different categories such as, high protein dishes, vegan dishes, complex dishes, and different meals.
+- Recommend the user dishes based on their allergy.
+- Recommend the user dishes based on their disease.
 
 ## Authors and Contributions
 This project builds on works by several authors, including Dooley et al., and utilizes methodologies from Horridge et al. and Neuhaus & Brodaric.

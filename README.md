@@ -27,7 +27,7 @@
 
 ## Overview
 This repository contains a comprehensive food ontology written in OWL (Web Ontology Language). It aims to provide a standardized vocabulary and semantic structure for describing food products, ingredients, personalized nutritional recommendations to support healthy eating through a comprehensive food ontology and related concepts.
-![Alt text](images/ontology_diagram.png)
+![Alt text](Codes_ScreenShots/all 3.png)
 ## Technical Details
 - Written in OWL (Web Ontology Language)
 - Developed using Protégé [version]

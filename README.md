@@ -45,6 +45,8 @@ This repository contains a comprehensive food ontology written in OWL (Web Ontol
 - **Ingredient**: Divided into animal-based and plant-based ingredients, with further subclasses like fruits, grains, and vegetables.
 - **User**: Represents user preferences and dietary restrictions.
 - **Disease**: Consider the health conditions of users before make any recomendation.
+- 
+<img src="Codes_ScreenShots/Screenshot%2022-12-14%20at%2019.31.24%20copy.png" alt="Overview of the project" width="66%">
 
 ## Relationships
 - **hasIngredient**: Connects dishes to their ingredients.

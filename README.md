@@ -2,11 +2,18 @@
 # Food Recommendation Ontology / Logical-Programming
 
 ## Table of Contents
-- [Overview](#background)
-- [Features](#features)
+- [Overview](#overview)
 - [Technical Details](#technical-details)
 - [Installation and Usage](#installation-and-usage)
+- [Features](#features)
+- [Key Classes](#classes)
+- Relationships
+- Property Restrictions
+- Applications
+
+
 - [Examples](#examples)
+-  Conclusion
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
@@ -47,22 +54,23 @@ The ontology can answer various queries, including:
 The ontology can be applied in various domains, including restaurants, the food industry, and domestic settings.
 
 ## Examples
-[Include some example queries or use cases]
+[Include some expected queries to be answered]
 
 ## Authors and Contributions
 This project builds on works by several authors, including Dooley et al., and utilizes methodologies from Horridge et al. and Neuhaus & Brodaric.
 
 ## Conclusion
 The Food Recommendation Ontology is a versatile tool for suggesting dishes that meet users' nutritional needs and preferences, promoting healthier eating habits.
-
+ 
 ## Contributing
 [Guidelines for contributing to the project]
+
+## License
+This project is licensed under [specify license].
 
 ## Contact
 For questions or feedback, please contact [your contact information].
 
-## License
-This project is licensed under [specify license].
 
 
 

@@ -30,15 +30,13 @@ The ontology can answer various queries, including:
 - Developed using Protégé [5.5.0]
 - Installation and Usage: (https://protege.stanford.edu)
 
-## ## Overview
+## ## Overview and ontology metrics
 This repository contains a comprehensive food ontology written in OWL (Web Ontology Language). It aims to provide a standardized vocabulary and semantic structure for describing food products, ingredients, personalized nutritional recommendations to support healthy eating through a comprehensive food ontology and related concepts.
 <div style="display: flex; justify-content: space-around;">
-    <img src="Technical_Details/Details_Pics/metrics_pic1.png" alt="Image 1" width="30%">
-    <img src="Technical_Details/Details_Pics/metrics_pic2.png" alt="Image 2" width="30%">
-    <img src="Technical_Details/Details_Pics/metrics_pic3.png" alt="Image 3" width="30%">
+    <img src="Technical_Details/Details_Pics/metrics_pic1.png" alt="Image 1" width="32%">
+    <img src="Technical_Details/Details_Pics/metrics_pic2.png" alt="Image 2" width="33%">
+    <img src="Technical_Details/Details_Pics/metrics_pic3.png" alt="Image 3" width="28%">
 </div>
-
-
 
 
 ## Key Classes

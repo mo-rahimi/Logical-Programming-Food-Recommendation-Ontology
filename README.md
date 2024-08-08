@@ -54,7 +54,13 @@ The ontology can answer various queries, including:
 The ontology can be applied in various domains, including restaurants, the food industry, and domestic settings.
 
 ## Examples
-[Include some expected queries to be answered]
+Expected queries to be answered, such as:
+- Recommend the user dishes based on the ingredients
+• Recommend the user dishes based on the nutrition.
+• Recommend the user dishes based on amount of calorie.
+• Recommend the user dishes based on different categories such as, high protein dishes, vegan dishes, complex dishes, and different meals.
+• Recommend the user dishes based on their allergy.
+• Recommend the user dishes based on their disease.
 
 ## Authors and Contributions
 This project builds on works by several authors, including Dooley et al., and utilizes methodologies from Horridge et al. and Neuhaus & Brodaric.

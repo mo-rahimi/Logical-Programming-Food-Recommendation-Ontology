@@ -6,7 +6,7 @@
 - [Technical Details](#technical-details)
 - [Installation and Usage](#installation-and-usage)
 - [Features](#features)
-- [Key Classes](#classes)
+- [Key Classes](#Key-classes)
 - Applying Disjoint
 - Relationship between different classes
 - Assigning domain and range to object properties

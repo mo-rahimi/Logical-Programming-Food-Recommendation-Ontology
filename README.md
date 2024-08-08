@@ -24,19 +24,22 @@
 - [License](#license)
 - [Contact](#contact)
 
-
-## Overview
-This repository contains a comprehensive food ontology written in OWL (Web Ontology Language). It aims to provide a standardized vocabulary and semantic structure for describing food products, ingredients, personalized nutritional recommendations to support healthy eating through a comprehensive food ontology and related concepts.
-![Alt text](Codes_ScreenShots/all 3.png)
-## Technical Details
+## Technical Details and what is ontology?
+The ontology can answer various queries, including:
 - Written in OWL (Web Ontology Language)
 - Developed using Protégé [5.5.0]
-- [Installation and Usage] (https://protege.stanford.edu)
+- Installation and Usage: (https://protege.stanford.edu)
 
-## Features
-The ontology can answer various queries, including:
-- Recommending dishes based on ingredients, nutrition, calorie content, and dietary categories (e.g., high protein, vegan).
-- Considering user allergies and diseases for personalized dish recommendations.
+## ## Overview
+This repository contains a comprehensive food ontology written in OWL (Web Ontology Language). It aims to provide a standardized vocabulary and semantic structure for describing food products, ingredients, personalized nutritional recommendations to support healthy eating through a comprehensive food ontology and related concepts.
+<div style="display: flex; justify-content: space-around;">
+    <img src="Technical_Details/Details_Pics/metrics_pic1.png" alt="Image 1" width="30%">
+    <img src="Technical_Details/Details_Pics/metrics_pic2.png" alt="Image 2" width="30%">
+    <img src="Technical_Details/Details_Pics/metrics_pic3.png" alt="Image 3" width="30%">
+</div>
+
+
+
 
 ## Key Classes
 - **Dish**: Includes subclasses like Named_Dish and various defined classes based on features such as calorie content and dietary restrictions.

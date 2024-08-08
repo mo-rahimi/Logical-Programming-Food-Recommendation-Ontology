@@ -2,7 +2,7 @@
 # Food Recommendation Ontology / Logical-Programming
 
 ## Table of Contents
-- [Background](#background)
+- [Overview](#background)
 - [Features](#features)
 - [Technical Details](#technical-details)
 - [Installation and Usage](#installation-and-usage)

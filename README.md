@@ -30,11 +30,8 @@ This repository contains a comprehensive food ontology written in OWL (Web Ontol
 ![Alt text](Codes_ScreenShots/all 3.png)
 ## Technical Details
 - Written in OWL (Web Ontology Language)
-- Developed using Protégé [version]
-- [Other technical specifics]
-
-## Installation and Usage
-[Provide instructions on how to download, install, and use the ontology]
+- Developed using Protégé [5.5.0]
+- [Installation and Usage] (https://protege.stanford.edu)
 
 ## Features
 The ontology can answer various queries, including:

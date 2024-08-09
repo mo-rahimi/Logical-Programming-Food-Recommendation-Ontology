@@ -79,7 +79,7 @@ The ontology can answer various queries, including:
 - **hasIngredient**: Links dishes to their ingredients.
 - **hasNutrient**: Connects ingredients to their nutritional content.
 - **servedAsMeal**: Specifies when a dish can be served (e.g., breakfast, lunch, dinner).
-<img src="Technical_Details/Details_Pics/Domain_Range.png" alt="Overview of the project" width="40%">
+<img src="Technical_Details/Details_Pics/Domain_Range.png" alt="Overview of the project" width="60%">
 
 
 ### Data Properties and Relations

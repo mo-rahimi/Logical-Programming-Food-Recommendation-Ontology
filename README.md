@@ -168,19 +168,6 @@ The explanation for each row in the **"Assigning Domain and Range to Object Prop
     - **Characteristics**: -
     - **Explanation**: This property signifies that certain nutritional elements can aid in managing or alleviating specific diseases. It establishes a connection between nutrition and health conditions, emphasizing the importance of dietary considerations in treatment.
 
-### Summary
-
-The explanations provided for each row clarify the significance of the object properties within the food ontology, detailing how they relate to dishes, ingredients, user preferences, and health conditions. The addition of "Inverse relationship" for the first two rows emphasizes the bidirectional nature of the relationships between ingredients and dishes.
-
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/24830350/3e95198a-ab4c-4f7c-9883-89b08f0e9683/Food-ontology_-OWL.pdf
-
-
-- **hasIngredient**: Links dishes to their ingredients.
-- **hasNutrient**: Connects ingredients to their nutritional content.
-- **servedAsMeal**: Specifies when a dish can be served (e.g., breakfast, lunch, dinner).
-<img src="Technical_Details/Details_Pics/Domain_Range.png" alt="Overview of the project" width="60%">
-
 
 ### Data Properties and Relations
 | Top Data Properties    | Characteristic | Type    |

@@ -15,24 +15,12 @@
   - [Applying Closure Axiom](#applying-closure-axiom)
   - [Changing a Primitive Class to a Defined Class](#changing-a-primitive-class-to-a-defined-class)
   - [Using the Reasoner](#using-the-reasoner)
-
 - [Applications](#applications)
 - [Examples](#examples)
 - [Conclusion](#conclusion)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## Overview
@@ -69,12 +57,124 @@ The ontology can answer various queries, including:
 
 
 ### Assigning Domain and Range to Object Properties
-| Object Property       | Domains         | Ranges         | Characteristics     |
-|-----------------------|-----------------|-----------------|----------------------|
-| hasIngredient         | Dish            | Ingredient      |                      |
-| isIngredientOf        | Ingredient      | Dish            | Inverse Relationship  |
-| hasNutrient           | Ingredients     | Nutrition       | Transitive           |
-| hasSpicyLevel         | Dish            | Level_Of_Spicy | Functional           |
+| Row | Object Property       | Domains         | Ranges         | Inverse of       | Characteristics |
+|-----|-----------------------|-----------------|-----------------|------------------|------------------|
+| 1   | hasIngredient         | Dish            | Ingredient      | isIngredientOf    | -                |
+| 2   | isIngredientOf        | Ingredient      | Dish            | hasIngredient     | -                |
+| 3   | hasNutrient           | Ingredients     | Nutrition       | -                | Transitive       |
+| 4   | hasSpicyLevel         | Dish            | Level_Of_Spicy | -                | Functional       |
+| 5   | servedAsMeal          | Dish            | Meal            | -                | -                |
+| 6   | servedAsSideDish      | Dish            | Side_Dish       | -                | Functional       |
+| 7   | dislikeIngredient      | User            | Ingredient      | -                | Transitive       |
+| 8   | likeIngredient         | User            | Ingredient      | isLikedBy        | Transitive       |
+| 9   | hasAllergyTo         | User            | Ingredient      | isAllergicTo     | -                |
+| 10  | isAllergicTo         | Ingredient      | User            | hasAllergyTo     | -                |
+| 11  | affectUserLife       | Disease         | User            | sufferFromDisease | -                |
+| 12  | sufferFromDisease     | User            | Disease         | affectUserLife    | -                |
+| 13  | helpWithDisease       | Nutrition       | Disease         | -                | -                |
+
+The explanation for each row in the **"Assigning Domain and Range to Object Properties"** table, along with the requested addition of "Inverse relationship" for rows 1 and 2 in the **Characteristics** column, is provided below:
+
+#### Explanations for Each Row
+
+1. **hasIngredient**
+   - **Domains**: Dish
+   - **Ranges**: Ingredient
+   - **Inverse of**: isIngredientOf
+   - **Characteristics**: Inverse relationship
+   - **Explanation**: This property indicates that a dish is composed of one or more ingredients. Each dish must have at least one ingredient associated with it, establishing a direct relationship between dishes and their ingredients. The inverse relationship, `isIngredientOf`, indicates that an ingredient can be part of one or more dishes.
+
+2. **isIngredientOf**
+   - **Domains**: Ingredient
+   - **Ranges**: Dish
+   - **Inverse of**: hasIngredient
+   - **Characteristics**: Inverse relationship
+   - **Explanation**: This property defines the relationship from the perspective of the ingredient, indicating that an ingredient can be part of a dish. It complements the `hasIngredient` property, emphasizing the bidirectional nature of the relationship between dishes and their ingredients.
+
+3. **hasNutrient**
+   - **Domains**: Ingredients
+   - **Ranges**: Nutrition
+   - **Inverse of**: -
+   - **Characteristics**: Transitive
+   - **Explanation**: This property signifies that ingredients contain various nutrients. The transitive nature means that if a dish has an ingredient, and that ingredient has a nutrient, then the dish also has that nutrient. This allows for a hierarchical understanding of nutritional content.
+
+4. **hasSpicyLevel**
+   - **Domains**: Dish
+   - **Ranges**: Level_Of_Spicy
+   - **Inverse of**: -
+   - **Characteristics**: Functional
+   - **Explanation**: This property defines the spiciness of a dish, categorizing it as either hot or mild. It is functional because each dish can only have one spiciness level; it cannot be both hot and mild simultaneously.
+
+5. **servedAsMeal**
+   - **Domains**: Dish
+   - **Ranges**: Meal
+   - **Inverse of**: -
+   - **Characteristics**: -
+   - **Explanation**: This property indicates that a dish can be served as a specific meal type, such as breakfast, lunch, or dinner. Unlike functional properties, a dish can be served in multiple meal contexts, allowing for flexibility in meal planning.
+
+6. **servedAsSideDish**
+   - **Domains**: Dish
+   - **Ranges**: Side_Dish
+   - **Inverse of**: -
+   - **Characteristics**: Functional
+   - **Explanation**: This property specifies that a dish can serve as a side dish. It is functional because a specific dish can be categorized as a side dish, but it can also fulfill other roles, such as an appetizer or dessert.
+
+7. **dislikeIngredient**
+   - **Domains**: User
+   - **Ranges**: Ingredient
+   - **Inverse of**: -
+   - **Characteristics**: Transitive
+   - **Explanation**: This property indicates that a user may dislike certain ingredients. The transitive nature implies that if a user dislikes an ingredient, they may also dislike dishes containing that ingredient.
+
+8. **likeIngredient**
+   - **Domains**: User
+   - **Ranges**: Ingredient
+   - **Inverse of**: isLikedBy
+   - **Characteristics**: Transitive
+   - **Explanation**: This property defines a user's preference for certain ingredients. Similar to the dislike property, it is transitive, meaning that if a user likes an ingredient, they may prefer dishes that include that ingredient.
+
+9. **hasAllergyTo**
+   - **Domains**: User
+   - **Ranges**: Ingredient
+   - **Inverse of**: isAllergicTo
+   - **Characteristics**: -
+   - **Explanation**: This property indicates that a user may have allergies to specific ingredients. The inverse relationship, `isAllergicTo`, highlights the potential for ingredients to cause allergic reactions in users.
+
+10. **isAllergicTo**
+    - **Domains**: Ingredient
+    - **Ranges**: User
+    - **Inverse of**: hasAllergyTo
+    - **Characteristics**: -
+    - **Explanation**: This property describes the relationship from the ingredient's perspective, indicating that certain ingredients may cause allergies in users. It complements the `hasAllergyTo` property.
+
+11. **affectUserLife**
+    - **Domains**: Disease
+    - **Ranges**: User
+    - **Inverse of**: sufferFromDisease
+    - **Characteristics**: -
+    - **Explanation**: This property indicates that certain diseases can impact a user's life. It establishes a direct relationship between diseases and users, highlighting the relevance of health conditions in dietary recommendations.
+
+12. **sufferFromDisease**
+    - **Domains**: User
+    - **Ranges**: Disease
+    - **Inverse of**: affectUserLife
+    - **Characteristics**: -
+    - **Explanation**: This property defines the relationship from the user's perspective, indicating that users may suffer from specific diseases. It complements the `affectUserLife` property, emphasizing the impact of health on dietary choices.
+
+13. **helpWithDisease**
+    - **Domains**: Nutrition
+    - **Ranges**: Disease
+    - **Inverse of**: -
+    - **Characteristics**: -
+    - **Explanation**: This property signifies that certain nutritional elements can aid in managing or alleviating specific diseases. It establishes a connection between nutrition and health conditions, emphasizing the importance of dietary considerations in treatment.
+
+### Summary
+
+The explanations provided for each row clarify the significance of the object properties within the food ontology, detailing how they relate to dishes, ingredients, user preferences, and health conditions. The addition of "Inverse relationship" for the first two rows emphasizes the bidirectional nature of the relationships between ingredients and dishes.
+
+Citations:
+[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/24830350/3e95198a-ab4c-4f7c-9883-89b08f0e9683/Food-ontology_-OWL.pdf
+
 
 - **hasIngredient**: Links dishes to their ingredients.
 - **hasNutrient**: Connects ingredients to their nutritional content.

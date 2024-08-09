@@ -7,7 +7,6 @@
 - [Features](#features)
 - [Technical Details](#technical-details)
 - Key Classes, Applying Disjoint, Relationship between different classes, Assigning domain and range to object properties, Data properties and relation, Property Restriction, Applying Closure Axiom, Change a Primitive class to a Defined class, Using the reasoner.
-
 - [Applications](#applications)
 - [Examples](#examples)
 - [Conclusion](#conclusion)
@@ -15,7 +14,56 @@
 - [License](#license)
 - [Contact](#contact)
 
+## Technical Details
 
+### Key Classes
+- **Dish**: Represents a dish made from various ingredients.
+- **Ingredient**: Classifies ingredients into animal-based and plant-based categories.
+- **Nutrition**: Includes subclasses for carbohydrates, fats, fibers, proteins, minerals, and vitamins.
+- **User**: Represents user preferences and dietary restrictions.
+- **Disease**: Classifies various diseases that may affect dietary recommendations.
+
+### Applying Disjoint Classes
+- Classes that cannot overlap:
+  - Example: Vitamin and carbohydrate are disjoint, meaning an instance cannot be both.
+
+### Relationships Between Classes
+- **hasIngredient**: Links dishes to their ingredients.
+- **hasNutrient**: Connects ingredients to their nutritional content.
+- **servedAsMeal**: Specifies when a dish can be served (e.g., breakfast, lunch, dinner).
+
+### Assigning Domain and Range to Object Properties
+| Object Property       | Domains         | Ranges         | Characteristics     |
+|-----------------------|-----------------|-----------------|----------------------|
+| hasIngredient         | Dish            | Ingredient      |                      |
+| isIngredientOf        | Ingredient      | Dish            | Inverse Relationship  |
+| hasNutrient           | Ingredients     | Nutrition       | Transitive           |
+| hasSpicyLevel         | Dish            | Level_Of_Spicy | Functional           |
+
+### Data Properties and Relations
+| Top Data Properties    | Characteristic | Type    |
+|------------------------|----------------|---------|
+| hasCalorieValue        | Functional     | Integer |
+| hasSaltAmountGram      | Functional     | Integer |
+| hasSugarAmountGram     | Functional     | Integer |
+
+### Property Restrictions
+- **Complex_Dish**: Dish and (hasIngredient min 10 owl:Thing)
+- **VeganDish**: Dish and (hasIngredient only PlantBasedIngredient)
+- **HighProteinDish**: Dish and ((hasIngredient some Bean) or (hasIngredient some Chickpea) or (hasIngredient some Lentil) or (hasIngredient some Quinoa))
+
+### Applying Closure Axiom
+- Example: Hummus can only be made with Chickpea, Olive oil, Pepper, and Salt.
+
+### Changing a Primitive Class to a Defined Class
+- By adding sufficient conditions to necessary conditions, a primitive class can be transformed into a defined class.
+
+### Using the Reasoner
+- The reasoner checks the consistency of statements and definitions in the ontology and helps maintain the hierarchy.
+
+### Visual Representations
+- Include relevant images or diagrams to illustrate the relationships and class structures.
+- 
 ## Technical Details
 The ontology can answer various queries, including:
 - Written in OWL (Web Ontology Language)

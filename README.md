@@ -73,7 +73,7 @@ The ontology can answer various queries, including:
 | 12  | sufferFromDisease     | User            | Disease         | affectUserLife    | -                |
 | 13  | helpWithDisease       | Nutrition       | Disease         | -                | -                |
 
-The explanation for each row in the **"Assigning Domain and Range to Object Properties"** table, along with the requested addition of "Inverse relationship" for rows 1 and 2 in the **Characteristics** column, is provided below:
+The explanation for each row in the **"Assigning Domain and Range to Object Properties"** table, is provided below:
 
 #### Explanations for Each Row
 

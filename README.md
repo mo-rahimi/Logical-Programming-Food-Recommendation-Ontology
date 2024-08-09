@@ -6,24 +6,15 @@
 - [Installation and Usage](#installation-and-usage)
 - [Features](#features)
 - [Technical Details](#technical-details)
-- Key Classes
-- Applying Disjoint
-- Relationship between different classes
-- Assigning domain and range to object properties
-- Data properties and relation
-- Property Restriction
-- Applying Closure Axiom
-- Change a Primitive class to a Defined class
-- Using the reasoner
-- [Relationships](#relationships)
-- [Property Restrictions](#property-restrictions)
+- Key Classes, Applying Disjoint, Relationship between different classes, Assigning domain and range to object properties, Data properties and relation, Property Restriction, Applying Closure Axiom, Change a Primitive class to a Defined class, Using the reasoner.
+
 - [Applications](#applications)
 - [Examples](#examples)
 - [Conclusion](#conclusion)
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
-- [Key Classes](#Key-classes
+
 
 ## Technical Details
 The ontology can answer various queries, including:

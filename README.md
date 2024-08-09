@@ -60,10 +60,12 @@ The ontology can answer various queries, including:
 - **Nutrition**: Includes subclasses for carbohydrates, fats, fibers, proteins, minerals, and vitamins.
 - **User**: Represents user preferences and dietary restrictions.
 - **Disease**: Classifies various diseases that may affect dietary recommendations.
+<img src="Images/class_pic1.png" alt="Overview of the project" width="40%">
 
 ### Applying Disjoint Classes
 - Classes that cannot overlap:
   - Example: Vitamin and carbohydrate are disjoint, meaning an instance cannot be both.
+<img src="Images/Disjoint_pic.png" alt="Overview of the project" width="40%">
 
 ### Relationships Between Classes
 - **hasIngredient**: Links dishes to their ingredients.

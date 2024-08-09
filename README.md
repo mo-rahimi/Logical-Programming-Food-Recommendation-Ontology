@@ -88,6 +88,9 @@ The ontology can answer various queries, including:
 | hasCalorieValue        | Functional     | Integer |
 | hasSaltAmountGram      | Functional     | Integer |
 | hasSugarAmountGram     | Functional     | Integer |
+<img src="Technical_Details/Details_Pics/data_property1.png" alt="Overview of the project" width="50%">
+<img src="Technical_Details/Details_Pics/data_property3.png" alt="Overview of the project" width="50%">
+<img src="Technical_Details/Details_Pics/data_property2.png" alt="Overview of the project" width="50%">
 
 ### Property Restrictions
 Utilizes property restrictions like existential and universal quantifiers to define complex dishes, vegan dishes, and more.

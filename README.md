@@ -159,12 +159,15 @@ The ontology can be applied in various domains, including restaurants, the food 
 
 ## Examples
 Expected queries to be answered, such as:
-- Recommend the user dishes based on the ingredients
-- Recommend the user dishes based on the nutrition.
-- Recommend the user dishes based on amount of calorie.
-- Recommend the user dishes based on different categories such as, high protein dishes, vegan dishes, complex dishes, and different meals.
-- Recommend the user dishes based on their allergy.
-- Recommend the user dishes based on their disease.
+
+**Recommend the user dishes with the calorie value between 300 and 420, also contain kale or spinach or tomato but no peanut.**
+<img src="Images/Queries_Pics/Query3.png" alt="Overview of the project" width="70%">
+
+**Recommend Sara a mild-spicy dinner without the ingredients which she has allergy to them**
+<img src="Images/Queries_Pics/Query5.png" alt="Overview of the project" width="70%">
+
+**Recommend a high protein dinner to Susan and Frank which can help them with their both diseases**
+<img src="Images/Queries_Pics/Query7.png" alt="Overview of the project" width="70%">
 
 ## Authors and Contributions
 This project builds on works by several authors, including Dooley et al., and utilizes methodologies from Horridge et al. and Neuhaus & Brodaric.

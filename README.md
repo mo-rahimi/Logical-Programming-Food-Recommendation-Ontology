@@ -3,10 +3,10 @@
 
 ## Table of Contents
 - [Overview](#overview)
-- [Technical Details](#technical-details)
 - [Installation and Usage](#installation-and-usage)
 - [Features](#features)
-- [Key Classes](#Key-classes)
+- [Technical Details](#technical-details)
+- Key Classes
 - Applying Disjoint
 - Relationship between different classes
 - Assigning domain and range to object properties
@@ -23,8 +23,9 @@
 - [Contributing](#contributing)
 - [License](#license)
 - [Contact](#contact)
+- [Key Classes](#Key-classes
 
-## Technical Details and what is ontology?
+## Technical Details
 The ontology can answer various queries, including:
 - Written in OWL (Web Ontology Language)
 - Developed using Protégé [5.5.0]

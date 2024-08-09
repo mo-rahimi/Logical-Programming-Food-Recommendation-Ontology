@@ -65,12 +65,8 @@ The ontology can answer various queries, including:
 ### Applying Disjoint Classes
 - Classes that cannot overlap:
   - Example: Vitamin and carbohydrate are disjoint, meaning an instance cannot be both.
-<img src="Images/Disjoint_pic.png" alt="Overview of the project" width="40%">
+<img src="Technical_Details/Details_Pics/Disjoint_pic.png" alt="Overview of the project" width="40%">
 
-### Relationships Between Classes
-- **hasIngredient**: Links dishes to their ingredients.
-- **hasNutrient**: Connects ingredients to their nutritional content.
-- **servedAsMeal**: Specifies when a dish can be served (e.g., breakfast, lunch, dinner).
 
 ### Assigning Domain and Range to Object Properties
 | Object Property       | Domains         | Ranges         | Characteristics     |
@@ -79,6 +75,12 @@ The ontology can answer various queries, including:
 | isIngredientOf        | Ingredient      | Dish            | Inverse Relationship  |
 | hasNutrient           | Ingredients     | Nutrition       | Transitive           |
 | hasSpicyLevel         | Dish            | Level_Of_Spicy | Functional           |
+
+- **hasIngredient**: Links dishes to their ingredients.
+- **hasNutrient**: Connects ingredients to their nutritional content.
+- **servedAsMeal**: Specifies when a dish can be served (e.g., breakfast, lunch, dinner).
+<img src="Technical_Details/Details_Pics/Domain_Range.png" alt="Overview of the project" width="40%">
+
 
 ### Data Properties and Relations
 | Top Data Properties    | Characteristic | Type    |
@@ -92,11 +94,6 @@ Utilizes property restrictions like existential and universal quantifiers to def
 - **Complex_Dish**: Dish and (hasIngredient min 10 owl:Thing)
 - **VeganDish**: Dish and (hasIngredient only PlantBasedIngredient)
 - **HighProteinDish**: Dish and ((hasIngredient some Bean) or (hasIngredient some Chickpea) or (hasIngredient some Lentil) or (hasIngredient some Quinoa))
-
-### Relationships
-- **hasIngredient**: Connects dishes to their ingredients.
-- **hasNutrient**: Links ingredients to their nutritional content.
-- **servedAsMeal**: Specifies when a dish can be served (e.g., breakfast, lunch, dinner).
 
 ### Applying Closure Axiom
 - Example: Hummus can only be made with Chickpea, Olive oil, Pepper, and Salt.

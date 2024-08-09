@@ -11,7 +11,7 @@
   - [Relationships Between Classes](#relationships-between-classes)
   - [Assigning Domain and Range to Object Properties](#assigning-domain-and-range-to-object-properties)
   - [Data Properties and Relations](#data-properties-and-relations)
-  - [Property Restrictions](#property-restrictions)
+  - [Property and Value Restrictions](#property-value-restrictions)
   - [Applying Closure Axiom](#applying-closure-axiom)
   - [Changing a Primitive Class to a Defined Class](#changing-a-primitive-class-to-a-defined-class)
   - [Using the Reasoner](#using-the-reasoner)
@@ -92,12 +92,17 @@ The ontology can answer various queries, including:
 <img src="Technical_Details/Details_Pics/data_property3.png" alt="Overview of the project" width="50%">
 <img src="Technical_Details/Details_Pics/data_property2.png" alt="Overview of the project" width="50%">
 
-### Property Restrictions
+### Property and Value Restrictions 
 Utilizes property restrictions like existential and universal quantifiers to define complex dishes, vegan dishes, and more.
 - **Complex_Dish**: Dish and (hasIngredient min 10 owl:Thing)
 - **VeganDish**: Dish and (hasIngredient only PlantBasedIngredient)
 - **HighProteinDish**: Dish and ((hasIngredient some Bean) or (hasIngredient some Chickpea) or (hasIngredient some Lentil) or (hasIngredient some Quinoa))
 <img src="Technical_Details/Details_Pics/Property%20Restriction.png" alt="Overview of the project" width="70%">
+<img src="Technical_Details/Details_Pics/hasValueRestriction.png" alt="Overview of the project" width="70%">
+
+- Universal restriction
+<img src="Technical_Details/Details_Pics/Universal_Restriction.png" alt="Overview of the project" width="70%">
+*Overview of the Universal Restriction in the Food Ontology.*
 
 ### Applying Closure Axiom
 - Example: Hummus can only be made with Chickpea, Olive oil, Pepper, and Salt.

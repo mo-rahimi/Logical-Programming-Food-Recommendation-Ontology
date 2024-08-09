@@ -129,14 +129,26 @@ Utilizes property restrictions like existential and universal quantifiers to def
 ### Visual Representations
 - Include relevant images or diagrams to illustrate the relationships and class structures.
 
-<img src="Images/Graph_Pics/graph_pic1.png" alt="Overview of the project" width="70%">
+**Illustrating the subclasses of diseases, minerals that are recommended to use for the specified diseases and then the food that contain those specific minerals.**
+
 <img src="Images/Graph_Pics/graph_pic2.png" alt="Overview of the project" width="70%">
+
+
+**Representing the Meal and showing Breakfast is a subclass of Meal and BreakfastDish. Moreover, showing the ingredients and nutrients which exist in some type of breakfasts.**
+
 <img src="Images/Graph_Pics/graph_pic3.png" alt="Overview of the project" width="70%">
+
+
+
+**Representing the Level_Of_Spicy based on two different ingredients which have some nutrients in common. Moreover, representing the dishes in these two different categories (mild and hot).**
+
 <img src="Images/Graph_Pics/graph_pic4.png" alt="Overview of the project" width="70%">
+
+
+
+**Representing that Phosphorous is a mineral, and the ingredients contain Phosphorous. For example, Honey has Phosphorous which is used in some Dishes and showing that Susan has allergy to Honey.**
+
 <img src="Images/Graph_Pics/graph_pic5.png" alt="Overview of the project" width="70%">
-
-
-
 
 
 

@@ -90,7 +90,7 @@ The ontology can answer various queries, including:
 | hasSugarAmountGram     | Functional     | Integer |
 <img src="Technical_Details/Details_Pics/data_property1.png" alt="Overview of the project" width="50%">
 <img src="Technical_Details/Details_Pics/data_property3.png" alt="Overview of the project" width="50%">
-<img src="Technical_Details/Details_Pics/data_property2.png" alt="Overview of the project" width="50%">
+
 
 ### Property and Value Restrictions 
 Utilizes property restrictions like existential and universal quantifiers to define complex dishes, vegan dishes, and more.
@@ -98,11 +98,12 @@ Utilizes property restrictions like existential and universal quantifiers to def
 - **VeganDish**: Dish and (hasIngredient only PlantBasedIngredient)
 - **HighProteinDish**: Dish and ((hasIngredient some Bean) or (hasIngredient some Chickpea) or (hasIngredient some Lentil) or (hasIngredient some Quinoa))
 <img src="Technical_Details/Details_Pics/Property%20Restriction.png" alt="Overview of the project" width="70%">
-<img src="Technical_Details/Details_Pics/hasValueRestriction.png" alt="Overview of the project" width="70%">
 
-- Universal restriction
+- *Overview of the Universal Restriction in the Food Ontology.*
 <img src="Technical_Details/Details_Pics/Universal_Restriction.png" alt="Overview of the project" width="70%">
-*Overview of the Universal Restriction in the Food Ontology.*
+
+- *Overview of the Cardinality Restriction in the Food Ontology.*
+<img src="Technical_Details/Details_Pics/Cardinality_Restriction.png" alt="Overview of the project" width="70%">
 
 ### Applying Closure Axiom
 - Example: Hummus can only be made with Chickpea, Olive oil, Pepper, and Salt.
@@ -110,7 +111,8 @@ Utilizes property restrictions like existential and universal quantifiers to def
 
 ### Changing a Primitive Class to a Defined Class
 - By adding sufficient conditions to necessary conditions, a primitive class can be transformed into a defined class.
-
+<img src="Technical_Details/Details_Pics/data_property2.png" alt="Overview of the project" width="70%">
+<img src="Technical_Details/Details_Pics/hasValueRestriction.png" alt="Overview of the project" width="70%">
 ### Using the Reasoner
 - The reasoner checks the consistency of statements and definitions in the ontology and helps maintain the hierarchy.
 

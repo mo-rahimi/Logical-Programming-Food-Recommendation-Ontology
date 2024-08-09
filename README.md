@@ -97,9 +97,11 @@ Utilizes property restrictions like existential and universal quantifiers to def
 - **Complex_Dish**: Dish and (hasIngredient min 10 owl:Thing)
 - **VeganDish**: Dish and (hasIngredient only PlantBasedIngredient)
 - **HighProteinDish**: Dish and ((hasIngredient some Bean) or (hasIngredient some Chickpea) or (hasIngredient some Lentil) or (hasIngredient some Quinoa))
+<img src="Technical_Details/Details_Pics/Property%20Restriction.png" alt="Overview of the project" width="70%">
 
 ### Applying Closure Axiom
 - Example: Hummus can only be made with Chickpea, Olive oil, Pepper, and Salt.
+<img src="Technical_Details/Details_Pics/Closure_Axiom.png" alt="Overview of the project" width="70%">
 
 ### Changing a Primitive Class to a Defined Class
 - By adding sufficient conditions to necessary conditions, a primitive class can be transformed into a defined class.

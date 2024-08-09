@@ -113,20 +113,33 @@ Utilizes property restrictions like existential and universal quantifiers to def
 - By adding sufficient conditions to necessary conditions, a primitive class can be transformed into a defined class.
 <img src="Technical_Details/Details_Pics/data_property2.png" alt="Overview of the project" width="70%">
 <img src="Technical_Details/Details_Pics/hasValueRestriction.png" alt="Overview of the project" width="70%">
+
 ### Using the Reasoner
 - The reasoner checks the consistency of statements and definitions in the ontology and helps maintain the hierarchy.
+  
+
+<div style="display: flex; justify-content: space-around; align-items: flex-start;">
+    <img src="Technical_Details/Details_Pics/Reasoner_pic1.png" alt="Image 1" width="38%">
+    <img src="Technical_Details/Details_Pics/Reasoner_pic2.png" alt="Image 2" width="25%">
+    <img src="Technical_Details/Details_Pics/Reasoner_pic3.png" alt="Image 3" width="25%">
+</div>
+
+
 
 ### Visual Representations
 - Include relevant images or diagrams to illustrate the relationships and class structures.
 
+<img src="Images/Graph_Pics/graph_pic1.png" alt="Overview of the project" width="70%">
+<img src="Images/Graph_Pics/graph_pic2.png" alt="Overview of the project" width="70%">
+<img src="Images/Graph_Pics/graph_pic3.png" alt="Overview of the project" width="70%">
+<img src="Images/Graph_Pics/graph_pic4.png" alt="Overview of the project" width="70%">
+<img src="Images/Graph_Pics/graph_pic5.png" alt="Overview of the project" width="70%">
 
 
 
 
 
 
-
-## Property Restrictions
 
 
 ## Applications

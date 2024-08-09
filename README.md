@@ -6,7 +6,16 @@
 - [Installation and Usage](#installation-and-usage)
 - [Features](#features)
 - [Technical Details](#technical-details)
-- Key Classes, Applying Disjoint, Relationship between different classes, Assigning domain and range to object properties, Data properties and relation, Property Restriction, Applying Closure Axiom, Change a Primitive class to a Defined class, Using the reasoner.
+  - [Key Classes](#key-classes)
+  - [Applying Disjoint Classes](#applying-disjoint-classes)
+  - [Relationships Between Classes](#relationships-between-classes)
+  - [Assigning Domain and Range to Object Properties](#assigning-domain-and-range-to-object-properties)
+  - [Data Properties and Relations](#data-properties-and-relations)
+  - [Property Restrictions](#property-restrictions)
+  - [Applying Closure Axiom](#applying-closure-axiom)
+  - [Changing a Primitive Class to a Defined Class](#changing-a-primitive-class-to-a-defined-class)
+  - [Using the Reasoner](#using-the-reasoner)
+
 - [Applications](#applications)
 - [Examples](#examples)
 - [Conclusion](#conclusion)
@@ -14,8 +23,37 @@
 - [License](#license)
 - [Contact](#contact)
 
-## Technical Details
 
+
+
+
+
+
+
+
+
+
+
+
+## Overview
+This repository contains a comprehensive food ontology written in OWL (Web Ontology Language). It aims to provide a standardized vocabulary and semantic structure for describing food products, ingredients, personalized nutritional recommendations to support healthy eating through a comprehensive food ontology and related concepts.
+<div style="display: flex; justify-content: space-around;">
+    <img src="Technical_Details/Details_Pics/metrics_pic1.png" alt="Image 1" width="32%">
+    <img src="Technical_Details/Details_Pics/metrics_pic2.png" alt="Image 2" width="33%">
+    <img src="Technical_Details/Details_Pics/metrics_pic3.png" alt="Image 3" width="28%">
+</div>
+
+<img src="Images/all.png" alt="Overview of the project" width="40%">
+
+## Installation and Usage
+The ontology can answer various queries, including:
+- Written in OWL (Web Ontology Language)
+- Developed using Protégé [5.5.0]
+- Installation and Usage: (https://protege.stanford.edu)
+
+## Features
+
+## Technical Details
 ### Key Classes
 - **Dish**: Represents a dish made from various ingredients.
 - **Ingredient**: Classifies ingredients into animal-based and plant-based categories.
@@ -48,9 +86,15 @@
 | hasSugarAmountGram     | Functional     | Integer |
 
 ### Property Restrictions
+Utilizes property restrictions like existential and universal quantifiers to define complex dishes, vegan dishes, and more.
 - **Complex_Dish**: Dish and (hasIngredient min 10 owl:Thing)
 - **VeganDish**: Dish and (hasIngredient only PlantBasedIngredient)
 - **HighProteinDish**: Dish and ((hasIngredient some Bean) or (hasIngredient some Chickpea) or (hasIngredient some Lentil) or (hasIngredient some Quinoa))
+
+### Relationships
+- **hasIngredient**: Connects dishes to their ingredients.
+- **hasNutrient**: Links ingredients to their nutritional content.
+- **servedAsMeal**: Specifies when a dish can be served (e.g., breakfast, lunch, dinner).
 
 ### Applying Closure Axiom
 - Example: Hummus can only be made with Chickpea, Olive oil, Pepper, and Salt.
@@ -63,38 +107,16 @@
 
 ### Visual Representations
 - Include relevant images or diagrams to illustrate the relationships and class structures.
-- 
-## Technical Details
-The ontology can answer various queries, including:
-- Written in OWL (Web Ontology Language)
-- Developed using Protégé [5.5.0]
-- Installation and Usage: (https://protege.stanford.edu)
-
-## ## Overview and ontology metrics
-This repository contains a comprehensive food ontology written in OWL (Web Ontology Language). It aims to provide a standardized vocabulary and semantic structure for describing food products, ingredients, personalized nutritional recommendations to support healthy eating through a comprehensive food ontology and related concepts.
-<div style="display: flex; justify-content: space-around;">
-    <img src="Technical_Details/Details_Pics/metrics_pic1.png" alt="Image 1" width="32%">
-    <img src="Technical_Details/Details_Pics/metrics_pic2.png" alt="Image 2" width="33%">
-    <img src="Technical_Details/Details_Pics/metrics_pic3.png" alt="Image 3" width="28%">
-</div>
 
 
-## Key Classes
-- **Dish**: Includes subclasses like Named_Dish and various defined classes based on features such as calorie content and dietary restrictions.
-- **Nutrition**: Covers carbohydrates, fats, fibers, proteins, minerals, and vitamins.
-- **Ingredient**: Divided into animal-based and plant-based ingredients, with further subclasses like fruits, grains, and vegetables.
-- **User**: Represents user preferences and dietary restrictions.
-- **Disease**: Consider the health conditions of users before make any recomendation.
-- 
-<img src="Images/all.png" alt="Overview of the project" width="40%">
 
-## Relationships
-- **hasIngredient**: Connects dishes to their ingredients.
-- **hasNutrient**: Links ingredients to their nutritional content.
-- **servedAsMeal**: Specifies when a dish can be served (e.g., breakfast, lunch, dinner).
+
+
+
+
 
 ## Property Restrictions
-- Utilizes property restrictions like existential and universal quantifiers to define complex dishes, vegan dishes, and more.
+
 
 ## Applications
 The ontology can be applied in various domains, including restaurants, the food industry, and domestic settings.

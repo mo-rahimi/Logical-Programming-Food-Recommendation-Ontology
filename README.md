@@ -159,13 +159,15 @@ The ontology can be applied in various domains, including restaurants, the food 
 
 ## Examples
 Expected queries to be answered, such as:
-
+- Query 1
 **Recommend the user dishes with the calorie value between 300 and 420, also contain kale or spinach or tomato but no peanut.**
 <img src="Images/Queries_Pics/Query3.png" alt="Overview of the project" width="70%">
 
+- Query 2
 **Recommend Sara a mild-spicy dinner without the ingredients which she has allergy to them**
 <img src="Images/Queries_Pics/Query5.png" alt="Overview of the project" width="70%">
 
+- Query 3
 **Recommend a high protein dinner to Susan and Frank which can help them with their both diseases**
 <img src="Images/Queries_Pics/Query7.png" alt="Overview of the project" width="70%">
 

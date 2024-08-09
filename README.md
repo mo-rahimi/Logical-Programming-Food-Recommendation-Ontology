@@ -24,7 +24,8 @@
 
 
 ## Overview
-This repository contains a comprehensive food ontology written in OWL (Web Ontology Language). It aims to provide a standardized vocabulary and semantic structure for describing food products, ingredients, personalized nutritional recommendations to support healthy eating through a comprehensive food ontology and related concepts.
+This repository contains a comprehensive food ontology written in OWL (Web Ontology Language). The primary goal of this ontology is to provide a standardized vocabulary and semantic structure for describing food products and ingredients. It aims to facilitate personalized nutritional recommendations that support healthy eating by leveraging a sophisticated framework of related concepts.
+
 <div style="display: flex; justify-content: space-around;">
     <img src="Technical_Details/Details_Pics/metrics_pic1.png" alt="Image 1" width="32%">
     <img src="Technical_Details/Details_Pics/metrics_pic2.png" alt="Image 2" width="33%">
@@ -34,12 +35,26 @@ This repository contains a comprehensive food ontology written in OWL (Web Ontol
 <img src="Images/all.png" alt="Overview of the project" width="40%">
 
 ## Installation and Usage
-The ontology can answer various queries, including:
+
+To utilize the Food Recommendation Ontology, clone this repository to your local machine using the following command:
+
+```bash
+git clone https://github.com/mo-rahimi/Logical-Prograamming-Food-Ontology-OWL.git
+
+
+Once cloned, you can open the ontology files in any OWL-compatible editor, such as Protégé, to explore and manipulate the ontology.
+
+
 - Written in OWL (Web Ontology Language)
 - Developed using Protégé [5.5.0]
 - Installation and Usage: (https://protege.stanford.edu)
 
 ## Features
+Standardized Vocabulary: Provides a common language for describing food-related concepts.
+Personalized Recommendations: Facilitates tailored nutritional advice based on individual dietary needs and preferences.
+Comprehensive Class Structure: Includes a wide range of classes representing dishes, ingredients, nutrients, and user preferences.
+Disjoint Class Definitions: Ensures clarity in categorization by defining disjoint classes within the ontology.
+Reasoning Capabilities: Supports reasoning to infer new knowledge from existing data.
 
 ## Technical Details
 ### Key Classes

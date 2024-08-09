@@ -38,7 +38,7 @@ This repository contains a comprehensive food ontology written in OWL (Web Ontol
 
 To utilize the Food Recommendation Ontology, clone this repository to your local machine using the following command:
 
-```bash
+
 git clone https://github.com/mo-rahimi/Logical-Prograamming-Food-Ontology-OWL.git
 
 

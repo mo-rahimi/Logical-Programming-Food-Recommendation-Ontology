@@ -2,8 +2,8 @@
 # Food Recommendation Ontology / Logical-Programming
 
 ## Table of Contents
-- [Overview](#overview)
 - [Installation and Usage](#installation-and-usage)
+- [Overview](#overview)
 - [Features](#features)
 - [Technical Details](#technical-details)
   - [Key Classes](#key-classes)
@@ -22,18 +22,6 @@
 - [License](#license)
 - [Contact](#contact)
 
-
-## Overview
-This repository contains a comprehensive food ontology written in OWL (Web Ontology Language). The primary goal of this ontology is to provide a standardized vocabulary and semantic structure for describing food products and ingredients. It aims to facilitate personalized nutritional recommendations that support healthy eating by leveraging a sophisticated framework of related concepts.
-
-<div style="display: flex; justify-content: space-around;">
-    <img src="Technical_Details/Details_Pics/metrics_pic1.png" alt="Image 1" width="32%">
-    <img src="Technical_Details/Details_Pics/metrics_pic2.png" alt="Image 2" width="33%">
-    <img src="Technical_Details/Details_Pics/metrics_pic3.png" alt="Image 3" width="28%">
-</div>
-
-<img src="Images/all.png" alt="Overview of the project" width="40%">
-
 ## Installation and Usage
 
 To utilize the Food Recommendation Ontology, clone this repository to your local machine using the following command:
@@ -49,12 +37,26 @@ Once cloned, you can open the ontology files in any OWL-compatible editor, such 
 - Developed using Protégé [5.5.0]
 - Installation and Usage: (https://protege.stanford.edu)
 
+
+## Overview
+This repository contains a comprehensive food ontology written in OWL (Web Ontology Language). The primary goal of this ontology is to provide a standardized vocabulary and semantic structure for describing food products and ingredients. It aims to facilitate personalized nutritional recommendations that support healthy eating by leveraging a sophisticated framework of related concepts.
+
+
+<div style="display: flex; justify-content: space-around;">
+    <img src="Technical_Details/Details_Pics/metrics_pic1.png" alt="Image 1" width="32%">
+    <img src="Technical_Details/Details_Pics/metrics_pic2.png" alt="Image 2" width="33%">
+    <img src="Technical_Details/Details_Pics/metrics_pic3.png" alt="Image 3" width="28%">
+</div>
+
+<img src="Images/all.png" alt="Overview of the project" width="40%">
+
+
 ## Features
-Standardized Vocabulary: Provides a common language for describing food-related concepts.
-Personalized Recommendations: Facilitates tailored nutritional advice based on individual dietary needs and preferences.
-Comprehensive Class Structure: Includes a wide range of classes representing dishes, ingredients, nutrients, and user preferences.
-Disjoint Class Definitions: Ensures clarity in categorization by defining disjoint classes within the ontology.
-Reasoning Capabilities: Supports reasoning to infer new knowledge from existing data.
+- **Standardized Vocabulary:** Provides a common language for describing food-related concepts.
+- **Personalized Recommendations:** Facilitates tailored nutritional advice based on individual dietary needs and preferences.
+- **Comprehensive Class Structure:** Includes a wide range of classes representing dishes, ingredients, nutrients, and user preferences.
+- **Disjoint Class Definitions:** Ensures clarity in categorization by defining disjoint classes within the ontology.
+- **Reasoning Capabilities:** Supports reasoning to infer new knowledge from existing data.
 
 ## Technical Details
 ### Key Classes
@@ -66,8 +68,8 @@ Reasoning Capabilities: Supports reasoning to infer new knowledge from existing 
 <img src="Images/class_pic1.png" alt="Overview of the project" width="40%">
 
 ### Applying Disjoint Classes
-- Classes that cannot overlap:
-  - Example: Vitamin and carbohydrate are disjoint, meaning an instance cannot be both.
+Disjoint classes are defined within the ontology to prevent individuals from belonging to multiple categories simultaneously, so classes that cannot overlap. For example, vitamins and carbohydrates are disjoint, meaning an instance cannot be classified as both at the same time.
+
 <img src="Technical_Details/Details_Pics/Disjoint_pic.png" alt="Overview of the project" width="40%">
 
 
@@ -89,8 +91,6 @@ Reasoning Capabilities: Supports reasoning to infer new knowledge from existing 
 | 13  | helpWithDisease       | Nutrition       | Disease         | -                | -                |
 
 The explanation for each row in the **"Assigning Domain and Range to Object Properties"** table, is provided below:
-
-#### Explanations for Each Row
 
 1. **hasIngredient**
    - **Domains**: Dish
@@ -185,6 +185,8 @@ The explanation for each row in the **"Assigning Domain and Range to Object Prop
 
 
 ### Data Properties and Relations
+Data properties are used to describe attributes of classes. These properties provide quantitative information about dishes and ingredients, enabling more precise dietary recommendations.
+
 | Top Data Properties    | Characteristic | Type    |
 |------------------------|----------------|---------|
 | hasCalorieValue        | Functional     | Integer |
@@ -195,7 +197,8 @@ The explanation for each row in the **"Assigning Domain and Range to Object Prop
 
 
 ### Property and Value Restrictions 
-Utilizes property restrictions like existential and universal quantifiers to define complex dishes, vegan dishes, and more.
+The ontology employs property restrictions to define specific conditions for classes. These restrictions help refine the classification of dishes based on user needs.
+For example, utilizes property restrictions like existential and universal quantifiers to define complex dishes, vegan dishes, and more.
 - **Complex_Dish**: Dish and (hasIngredient min 10 owl:Thing)
 - **VeganDish**: Dish and (hasIngredient only PlantBasedIngredient)
 - **HighProteinDish**: Dish and ((hasIngredient some Bean) or (hasIngredient some Chickpea) or (hasIngredient some Lentil) or (hasIngredient some Quinoa))
@@ -208,17 +211,17 @@ Utilizes property restrictions like existential and universal quantifiers to def
 <img src="Technical_Details/Details_Pics/Cardinality_Restriction.png" alt="Overview of the project" width="70%">
 
 ### Applying Closure Axiom
-- Example: Hummus can only be made with Chickpea, Olive oil, Pepper, and Salt.
+The closure axiom is used to define constraints on classes. For example, a dish like Hummus can only be made with specific ingredients such as chickpeas, olive oil, pepper, and salt. This ensures that the ontology accurately reflects the relationships between dishes and their components.
+
 <img src="Technical_Details/Details_Pics/Closure_Axiom.png" alt="Overview of the project" width="70%">
 
 ### Changing a Primitive Class to a Defined Class
-- By adding sufficient conditions to necessary conditions, a primitive class can be transformed into a defined class.
+By adding sufficient conditions to necessary conditions, a primitive class can be transformed into a defined class. This process enhances the specificity and usability of the ontology.
 <img src="Technical_Details/Details_Pics/data_property2.png" alt="Overview of the project" width="70%">
 <img src="Technical_Details/Details_Pics/hasValueRestriction.png" alt="Overview of the project" width="70%">
 
 ### Using the Reasoner
-- The reasoner checks the consistency of statements and definitions in the ontology and helps maintain the hierarchy.
-  
+The reasoner is a critical component that evaluates the consistency of the ontology. It helps maintain the hierarchy by recognizing which concepts fit specific definitions. The reasoner can also infer new relationships and properties based on existing data, enhancing the ontology's functionality.
 
 <div style="display: flex; justify-content: space-around; align-items: flex-start;">
     <img src="Technical_Details/Details_Pics/Reasoner_pic1.png" alt="Image 1" width="38%">
@@ -254,10 +257,11 @@ Utilizes property restrictions like existential and universal quantifiers to def
 
 
 
-
-
 ## Applications
-The ontology can be applied in various domains, including restaurants, the food industry, and domestic settings.
+The Food Recommendation Ontology can be applied in various domains, including:
+- Restaurants: To offer personalized menu recommendations based on customer preferences and dietary restrictions.
+- Food Industry: For product labeling and nutritional information dissemination.
+- Healthcare: To provide dietary advice tailored to patients' health conditions.
 
 ## Examples
 Expected queries to be answered, such as:
@@ -277,18 +281,13 @@ Expected queries to be answered, such as:
 This project builds on works by several authors, including Dooley et al., and utilizes methodologies from Horridge et al. and Neuhaus & Brodaric.
 
 ## Conclusion
-The Food Recommendation Ontology is a versatile tool for suggesting dishes that meet users' nutritional needs and preferences, promoting healthier eating habits.
- 
+The Food Recommendation Ontology is a versatile tool that empowers users to discover their favorite foods while ensuring that their dietary needs are met. By leveraging a robust framework of classes and properties, this ontology can suggest a variety of dishes tailored to individual preferences and health conditions.
 ## Contributing
-[Guidelines for contributing to the project]
-
+Contributions to the Food Recommendation Ontology are welcome. Please fork the repository and submit a pull request with your changes.
 ## License
-This project is licensed under [specify license].
-
+This project is licensed under the MIT License. See the LICENSE file for details.
 ## Contact
-For questions or feedback, please contact [your contact information].
-
-
+For inquiries, feedback or further information, please contact Mohsen at m.rahimi.hk@gmail.com
 
 
 

@@ -22,8 +22,14 @@
 - [License](#license)
 - [Contact](#contact)
 
-## Installation and Usage
+## Importance of Logical Programming, Installation and Usage
+Logical programming is a programming paradigm that is particularly well-suited for knowledge representation and reasoning. It allows for the expression of facts and rules in a declarative manner, enabling systems to infer new information based on existing data. This is crucial in domains like nutrition, where complex relationships exist between food items, ingredients, and health outcomes.
 
+Using logical programming in the development of this ontology offers several advantages:
+- **Expressiveness:** Logical programming enables the representation of complex relationships and constraints among various entities, which is essential for accurately modeling nutritional information and dietary recommendations.
+- **Inference Capabilities:** By leveraging reasoning engines, the ontology can automatically infer new relationships and properties. For instance, if a user has a dietary restriction, the system can infer which dishes are suitable based on the ingredients they contain.
+- **Consistency Checking:** Logical programming allows for the validation of the ontology's consistency. This ensures that all defined relationships and properties adhere to the specified rules, which is vital for maintaining the integrity of the data.
+  
 To utilize the Food Recommendation Ontology, clone this repository to your local machine using the following command:
 
 
@@ -47,7 +53,11 @@ This repository contains a comprehensive food ontology written in OWL (Web Ontol
     <img src="Technical_Details/Details_Pics/metrics_pic3.png" alt="Image 3" width="28%">
 </div>
 
+These metrics highlight the complexity and richness of the ontology. The high number of logical axioms indicates a well-defined structure that supports intricate relationships among food items, nutrients, and user preferences. The declaration axioms provide a clear definition of the classes and properties within the ontology, ensuring that all entities are properly categorized.
+The class count of 161 reflects the comprehensive nature of the ontology, encompassing a wide array of food-related concepts. The presence of 14 object properties and 3 data properties allows for detailed descriptions of relationships and attributes, facilitating nuanced dietary recommendations.
+
 <img src="Images/all.png" alt="Overview of the project" width="40%">
+
 
 
 ## Features
@@ -231,28 +241,38 @@ The reasoner is a critical component that evaluates the consistency of the ontol
 
 
 ### Visual Representations
-- Include relevant images or diagrams to illustrate the relationships and class structures.
+The following images and diagrams illustrate key concepts within the Food Recommendation Ontology, showcasing relationships between classes and the structure of the ontology.
 
-**Illustrating the subclasses of diseases, minerals that are recommended to use for the specified diseases and then the food that contain those specific minerals.**
+**Subclasses of Diseases and Recommended Minerals**
+This diagram illustrates the subclasses of diseases and the specific minerals recommended for each disease. It also highlights the foods that contain these essential minerals, providing a comprehensive view of how nutrition can support health.
 
 <img src="Images/Graph_Pics/graph_pic2.png" alt="Overview of the project" width="70%">
+Subclasses of Diseases and Recommended Minerals
 
 
-**Representing the Meal and showing Breakfast is a subclass of Meal and BreakfastDish. Moreover, showing the ingredients and nutrients which exist in some type of breakfasts.**
+**Meal Classification and Breakfast Details**
+This representation shows the classification of meals, emphasizing that Breakfast is a subclass of Meal and BreakfastDish. It further details the ingredients and nutrients commonly found in various types of breakfasts, illustrating the nutritional composition of morning meals.
 
 <img src="Images/Graph_Pics/graph_pic3.png" alt="Overview of the project" width="70%">
+Meal Classification and Breakfast Details
 
 
+**Spiciness Levels Based on Ingredients**
+This diagram represents the Level_Of_Spicy based on two different ingredients that share some common nutrients. It categorizes dishes into two groups: mild and hot, providing insights into how spiciness can vary among different food items.
 
-**Representing the Level_Of_Spicy based on two different ingredients which have some nutrients in common. Moreover, representing the dishes in these two different categories (mild and hot).**
 
 <img src="Images/Graph_Pics/graph_pic4.png" alt="Overview of the project" width="70%">
+Spiciness Levels Based on Ingredients
 
 
+**Phosphorous as a Mineral and Its Sources**
+This image illustrates that Phosphorous is a mineral, showcasing ingredients that contain phosphorous. For example, it highlights that Honey contains phosphorous, which is used in various dishes. Additionally, it indicates that a user named Susan has an allergy to honey, emphasizing the importance of considering allergies in dietary recommendations.
 
-**Representing that Phosphorous is a mineral, and the ingredients contain Phosphorous. For example, Honey has Phosphorous which is used in some Dishes and showing that Susan has allergy to Honey.**
 
 <img src="Images/Graph_Pics/graph_pic5.png" alt="Overview of the project" width="70%">
+Phosphorous as a Mineral and Its Sources
+
+
 
 
 
@@ -280,13 +300,16 @@ Expected queries to be answered, such as:
 This project builds on works by several authors, including Dooley et al., and utilizes methodologies from Horridge et al. and Neuhaus & Brodaric.
 
 ## Conclusion
-The Food Recommendation Ontology is a versatile tool that empowers users to discover their favorite foods while ensuring that their dietary needs are met. By leveraging a robust framework of classes and properties, this ontology can suggest a variety of dishes tailored to individual preferences and health conditions.
+By utilizing logical programming principles and a well-structured ontology, this project aims to enhance the understanding of food relationships and provide personalized nutritional guidance. This not only supports individual health goals but also promotes informed dietary choices, ultimately contributing to better health outcomes. This extended overview provides a thorough explanation of the ontology's purpose, the significance of logical programming, and detailed metrics that illustrate its complexity and functionality.
+
 ## Contributing
 Contributions to the Food Recommendation Ontology are welcome. Please fork the repository and submit a pull request with your changes.
+
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
+
 ## Contact
-For inquiries, feedback or further information, please contact Mohsen at m.rahimi.hk@gmail.com
+For inquiries, feedback or further information, please contact Mohsen🙂 at m.rahimi.hk@gmail.com
 
 
 

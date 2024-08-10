@@ -326,7 +326,7 @@ Contributions to the Food Recommendation Ontology are welcome. Please fork the r
 This project is licensed under the MIT License. See the LICENSE file for details.
 
 ## Contact
-For inquiries, feedback or further information, please contact Mohsen🙂 at m.rahimi.hk@gmail.com
+For inquiries, feedback or further information, please contact me🙂 at m.rahimi.hk@gmail.com
 
 
 

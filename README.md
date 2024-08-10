@@ -27,8 +27,7 @@
 To utilize the Food Recommendation Ontology, clone this repository to your local machine using the following command:
 
 
-git clone https://github.com/mo-rahimi/Logical-Prograamming-Food-Ontology-OWL.git
-
+git clone https://github.com/mo-rahimi/Logical-Programming-Food-Recommendation-Ontology.git
 
 Once cloned, you can open the ontology files in any OWL-compatible editor, such as Protégé, to explore and manipulate the ontology.
 

@@ -23,7 +23,9 @@
 - [Contact](#contact)
 
 ## Importance of Logical Programming, Installation and Usage
-Logical programming is a programming paradigm that is particularly well-suited for knowledge representation and reasoning. It allows for the expression of facts and rules in a declarative manner, enabling systems to infer new information based on existing data. This is crucial in domains like nutrition, where complex relationships exist between food items, ingredients, and health outcomes.
+**Logical programming** is a programming paradigm that is particularly well-suited for **knowledge representation** and **reasoning**. 
+
+It allows for the expression of facts and rules in a declarative manner, enabling systems to infer new information based on existing data. This is crucial in domains like nutrition, where complex relationships exist between food items, ingredients, and health outcomes.
 
 Using logical programming in the development of this ontology offers several advantages:
 - **Expressiveness:** Logical programming enables the representation of complex relationships and constraints among various entities, which is essential for accurately modeling nutritional information and dietary recommendations.
@@ -44,7 +46,8 @@ Once cloned, you can open the ontology files in any OWL-compatible editor, such 
 
 
 ## Overview
-This repository contains a comprehensive food ontology written in OWL (Web Ontology Language). The primary goal of this ontology is to provide a standardized vocabulary and semantic structure for describing food products and ingredients. It aims to facilitate personalized nutritional recommendations that support healthy eating by leveraging a sophisticated framework of related concepts.
+This repository contains a comprehensive food ontology written in OWL (Web Ontology Language).  
+The primary goal of this ontology is to provide a standardized vocabulary and semantic structure for describing food products and ingredients. It aims to facilitate personalized nutritional recommendations that support healthy eating by leveraging a sophisticated framework of related concepts.
 
 
 <div style="display: flex; justify-content: space-around;">
@@ -53,8 +56,14 @@ This repository contains a comprehensive food ontology written in OWL (Web Ontol
     <img src="Technical_Details/Details_Pics/metrics_pic3.png" alt="Image 3" width="28%">
 </div>
 
-These metrics highlight the complexity and richness of the ontology. The high number of logical axioms indicates a well-defined structure that supports intricate relationships among food items, nutrients, and user preferences. The declaration axioms provide a clear definition of the classes and properties within the ontology, ensuring that all entities are properly categorized.
-The class count of 161 reflects the comprehensive nature of the ontology, encompassing a wide array of food-related concepts. The presence of 14 object properties and 3 data properties allows for detailed descriptions of relationships and attributes, facilitating nuanced dietary recommendations.
+### Metrics of the Ontology
+
+These metrics highlight the complexity and richness of the ontology:
+
+- The high number of logical axioms (1040) indicates a well-defined structure that supports intricate relationships among food items, nutrients, and user preferences.
+- Declaration axioms (202) provide clear definitions of the classes and properties within the ontology, ensuring that all entities are properly categorized.
+- The class count of 161 reflects the comprehensive nature of the ontology, encompassing a wide array of food-related concepts.
+- The presence of 14 object properties and 3 data properties allows for detailed descriptions of relationships and attributes, facilitating nuanced dietary recommendations.
 
 <img src="Images/all.png" alt="Overview of the project" width="40%">
 
@@ -74,12 +83,12 @@ The class count of 161 reflects the comprehensive nature of the ontology, encomp
 - **Nutrition**: Includes subclasses for carbohydrates, fats, fibers, proteins, minerals, and vitamins.
 - **User**: Represents user preferences and dietary restrictions.
 - **Disease**: Classifies various diseases that may affect dietary recommendations.
-<img src="Images/class_pic1.png" alt="Overview of the project" width="40%">
+<img src="Images/class_pic1.png" alt="Overview of the project" width="60%">
 
 ### Applying Disjoint Classes
 Disjoint classes are defined within the ontology to prevent individuals from belonging to multiple categories simultaneously, so classes that cannot overlap. For example, vitamins and carbohydrates are disjoint, meaning an instance cannot be classified as both at the same time.
 
-<img src="Technical_Details/Details_Pics/Disjoint_pic.png" alt="Overview of the project" width="40%">
+<img src="Technical_Details/Details_Pics/Disjoint_pic.png" alt="Overview of the project" width="60%">
 
 
 ### Assigning Domain and Range to Object Properties
@@ -201,8 +210,8 @@ Data properties are used to describe attributes of classes. These properties pro
 | hasCalorieValue        | Functional     | Integer |
 | hasSaltAmountGram      | Functional     | Integer |
 | hasSugarAmountGram     | Functional     | Integer |
-<img src="Technical_Details/Details_Pics/data_property1.png" alt="Overview of the project" width="50%">
-<img src="Technical_Details/Details_Pics/data_property3.png" alt="Overview of the project" width="50%">
+<img src="Technical_Details/Details_Pics/data_property1.png" alt="Overview of the project" width="70%">
+<img src="Technical_Details/Details_Pics/data_property3.png" alt="Overview of the project" width="70%">
 
 
 ### Property and Value Restrictions 
@@ -241,36 +250,44 @@ The reasoner is a critical component that evaluates the consistency of the ontol
 
 
 ### Visual Representations
+
 The following images and diagrams illustrate key concepts within the Food Recommendation Ontology, showcasing relationships between classes and the structure of the ontology.
 
-**Subclasses of Diseases and Recommended Minerals**
+
+**1. Subclasses of Diseases and Recommended Minerals:**
+
 This diagram illustrates the subclasses of diseases and the specific minerals recommended for each disease. It also highlights the foods that contain these essential minerals, providing a comprehensive view of how nutrition can support health.
 
 <img src="Images/Graph_Pics/graph_pic2.png" alt="Overview of the project" width="70%">
-Subclasses of Diseases and Recommended Minerals
 
 
-**Meal Classification and Breakfast Details**
+
+**2. Meal Classification and Breakfast Details:**
+
 This representation shows the classification of meals, emphasizing that Breakfast is a subclass of Meal and BreakfastDish. It further details the ingredients and nutrients commonly found in various types of breakfasts, illustrating the nutritional composition of morning meals.
 
 <img src="Images/Graph_Pics/graph_pic3.png" alt="Overview of the project" width="70%">
-Meal Classification and Breakfast Details
 
 
-**Spiciness Levels Based on Ingredients**
+
+
+**3. Spiciness Levels Based on Ingredients:**
+
 This diagram represents the Level_Of_Spicy based on two different ingredients that share some common nutrients. It categorizes dishes into two groups: mild and hot, providing insights into how spiciness can vary among different food items.
 
 
 <img src="Images/Graph_Pics/graph_pic4.png" alt="Overview of the project" width="70%">
-Spiciness Levels Based on Ingredients
 
 
-**Phosphorous as a Mineral and Its Sources**
+
+
+**4. Phosphorous as a Mineral and Its Sources:**
+
 This image illustrates that Phosphorous is a mineral, showcasing ingredients that contain phosphorous. For example, it highlights that Honey contains phosphorous, which is used in various dishes. Additionally, it indicates that a user named Susan has an allergy to honey, emphasizing the importance of considering allergies in dietary recommendations.
 
 
 <img src="Images/Graph_Pics/graph_pic5.png" alt="Overview of the project" width="70%">
-Phosphorous as a Mineral and Its Sources
+
 
 
 
@@ -278,9 +295,9 @@ Phosphorous as a Mineral and Its Sources
 
 ## Applications
 The Food Recommendation Ontology can be applied in various domains, including:
-- Restaurants: To offer personalized menu recommendations based on customer preferences and dietary restrictions.
-- Food Industry: For product labeling and nutritional information dissemination.
-- Healthcare: To provide dietary advice tailored to patients' health conditions.
+- **Restaurants:** To offer personalized menu recommendations based on customer preferences and dietary restrictions.
+- **Food Industry:** For product labeling and nutritional information dissemination.
+- **Healthcare:** To provide dietary advice tailored to patients' health conditions.
 
 ## Examples
 Expected queries to be answered, such as:

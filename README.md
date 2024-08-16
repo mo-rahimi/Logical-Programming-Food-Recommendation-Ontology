@@ -1,6 +1,5 @@
 
 # Food Recommendation Ontology / Logical-Programming
-
 ## Table of Contents
 - [Installation and Usage](#installation-and-usage)
 - [Overview](#overview)

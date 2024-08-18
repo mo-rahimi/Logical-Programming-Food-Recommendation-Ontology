@@ -316,9 +316,6 @@ Expected queries to be answered, such as:
 **Recommend a high protein dinner to Susan and Frank which can help them with their both diseases**
 <img src="Images/Queries_Pics/Query7.png" alt="Overview of the project" width="70%">
 
-## Authors and Contributions
-This project builds on works by several authors, including Dooley et al., and utilizes methodologies from Horridge et al. and Neuhaus & Brodaric.
-
 ## Conclusion
 By utilizing logical programming principles and a well-structured ontology, this project aims to enhance the understanding of food relationships and provide personalized nutritional guidance. This not only supports individual health goals but also promotes informed dietary choices, ultimately contributing to better health outcomes. This extended overview provides a thorough explanation of the ontology's purpose, the significance of logical programming, and detailed metrics that illustrate its complexity and functionality.
 

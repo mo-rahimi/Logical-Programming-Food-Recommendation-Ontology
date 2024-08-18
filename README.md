@@ -1,6 +1,10 @@
 
 # Food Recommendation Ontology / Logical-Programming
 ## Table of Contents
+
+<img src="Images/all.png" align="right"
+     alt="Size Limit logo by Anton Lovchikov" width="300" height="550">
+     
 - [Installation and Usage](#installation-and-usage)
 - [Overview](#overview)
 - [Features](#features)
@@ -64,7 +68,7 @@ These metrics highlight the complexity and richness of the ontology:
 - The class count of 161 reflects the comprehensive nature of the ontology, encompassing a wide array of food-related concepts.
 - The presence of 14 object properties and 3 data properties allows for detailed descriptions of relationships and attributes, facilitating nuanced dietary recommendations.
 
-<img src="Images/all.png" alt="Overview of the project" width="40%">
+
 
 
 

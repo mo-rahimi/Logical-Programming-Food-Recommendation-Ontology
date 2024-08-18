@@ -45,7 +45,7 @@ Once cloned, you can open the ontology files in any OWL-compatible editor, such 
 
 - Written in OWL (Web Ontology Language)
 - Developed using Protégé [5.5.0]
-- Installation and Usage: (https://protege.stanford.edu)
+- Installation and Usage: [Protege](https://protege.stanford.edu)
 
 
 ## Overview

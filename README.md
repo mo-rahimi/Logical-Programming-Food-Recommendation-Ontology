@@ -1,4 +1,3 @@
-
 # Food Recommendation Ontology / Logical-Programming
 ## Table of Contents
 

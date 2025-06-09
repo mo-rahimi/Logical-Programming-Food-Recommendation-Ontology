@@ -2,7 +2,6 @@
 ## Table of Contents
 
 
-
 <img src="Images/all.png" align="right"
      alt="Size Limit logo by Anton Lovchikov" width="310" height="550">
      
